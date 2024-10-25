@@ -1874,7 +1874,7 @@ int main(int argc, char **argv) {
         genBenchmarkRandomData(data, config.datasize);
         data[config.datasize] = '\0';
 
-        if (test_is_selected("ping_inline") || test_is_selected("ping"))
+        if (test_is_selected("ping_inline"))
             benchmark("PING_INLINE","PING\r\n",6);
 
         if (test_is_selected("ping_mbulk") || test_is_selected("ping")) {
